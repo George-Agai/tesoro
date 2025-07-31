@@ -13,15 +13,16 @@ const features: Feature[] = [
 ];
 
 export const Features: React.FC = () => (
-    <section id="features" className="container py-12">
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+    <section className="my-container px-1">
+        <div className="grid gap-2 py-2 grid-cols-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-4">
             {features.map((f) => (
-                <div key={f.title} className="p-6 bg-white rounded-lg shadow">
-                    <div className="text-4xl mb-4">{f.icon}</div>
-                    <h3 className="text-xl font-semibold mb-2">{f.title}</h3>
+                <div key={f.title} className="bg-white rounded-lg shadow pl-1 py-1">
+                    <div className="text-4xl mb-1">{f.icon}</div>
+                    <h3 className="text-xl font-semibold mb-0.5">{f.title}</h3>
                     <p>{f.desc}</p>
                 </div>
             ))}
         </div>
     </section>
+
 );
