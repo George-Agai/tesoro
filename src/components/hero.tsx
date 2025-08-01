@@ -8,7 +8,7 @@ export const Hero: React.FC = () => (
         <p className="text-lg md:text-xl mb-1">
             Fast, secure and low-cost payments wherever you are.
         </p>
-        <button className="px-2 py-0.5 mt-1 mb-1 font-semibold cursor-pointer border border-blue-500 bg-blue-500 text-white rounded-lg hover:bg-transparent hover:text-blue-600 transition">
+        <button className="px-1.5 py-0.5 mt-1 mb-1 font-semibold cursor-pointer border border-blue-500 bg-blue-500 text-white rounded-lg hover:bg-transparent hover:text-blue-600 transition">
             Download App
         </button>
     </section>
