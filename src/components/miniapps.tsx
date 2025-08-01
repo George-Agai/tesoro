@@ -53,7 +53,7 @@ export const MiniappsSection: React.FC = () => (
             </button>
         </div>
 
-        <div className="max-w-5xl mx-auto grid gap-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className="max-w-5xl mx-auto grid gap-3 grid-cols-1 sm:gap-2 sm:grid-cols-2 md:grid-cols-3">
             {miniAppFeatures.map((f) => (
                 <div
                     key={f.title}
