@@ -31,7 +31,7 @@ const features: Feature[] = [
 ]
 
 export const SecuritySection: React.FC = () => (
-    <section className="px-1 py-6">
+    <section className="px-1 pt-6 pb-5">
         <div className="max-w-4xl mx-auto text-center">
             <p className="border border-orange-300 inline-block text-sm px-1 rounded-full bg-orange-200">Security</p>
             <h2 className="text-3xl md:text-4xl font-bold my-1">
@@ -57,6 +57,12 @@ export const SecuritySection: React.FC = () => (
                     <p className="text-gray-500 text-md">{f.description}</p>
                 </div>
             ))}
+        </div>
+
+        <div className='my-container flex align-center justify-center pt-3'>
+            <button className="relative z-10 px-2.5 py-1 font-semibold cursor-pointer border border-blue-500 bg-blue-500 text-white rounded-2xl hover:bg-transparent hover:text-blue-600 transition">
+                Download App
+            </button>
         </div>
     </section>
 )

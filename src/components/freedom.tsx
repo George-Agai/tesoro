@@ -7,7 +7,7 @@ export const Freedom: React.FC = () => {
             <div className="relative z-10">
                 <p className="text-2xl font-bold text-center md:text-3xl">Send and spend freely—no borders, no barriers, just seamless freedom.</p>
             </div>
-            <button className="relative z-10 px-1 py-0.5 mt-2 font-semibold cursor-pointer border border-blue-500 bg-blue-500 text-white rounded-lg hover:bg-transparent hover:text-blue-600 transition">
+            <button className="relative z-10 px-2.5 py-1 mt-2 font-semibold cursor-pointer border border-blue-500 bg-blue-500 text-white rounded-2xl hover:bg-transparent hover:text-blue-600 transition">
                 Download App
             </button>
         </section>
