@@ -2,6 +2,7 @@ import { Header } from '../components/header';
 import { Hero } from '../components/hero';
 import { Features } from '../components/features';
 import { Footer } from '../components/footer';
+import { Freedom } from '../components/freedom';
 
 function Home() {
 
@@ -10,6 +11,7 @@ function Home() {
       <Header />
       <Hero />
       <Features />
+      <Freedom/>
       <Footer />
     </div>
   )
