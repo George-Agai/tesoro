@@ -3,6 +3,7 @@ import { Hero } from '../components/hero';
 import { Features } from '../components/features';
 import { Footer } from '../components/footer';
 import { Freedom } from '../components/freedom';
+import { SecuritySection } from '../components/walletcontrol';
 
 function Home() {
 
@@ -12,6 +13,7 @@ function Home() {
       <Hero />
       <Features />
       <Freedom/>
+      <SecuritySection/>
       <Footer />
     </div>
   )
