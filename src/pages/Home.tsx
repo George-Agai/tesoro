@@ -4,6 +4,7 @@ import { Features } from '../components/features';
 import { Footer } from '../components/footer';
 import { Freedom } from '../components/freedom';
 import { SecuritySection } from '../components/walletcontrol';
+import { MiniappsSection } from '../components/miniapps';
 
 function Home() {
 
@@ -14,6 +15,7 @@ function Home() {
       <Features />
       <Freedom/>
       <SecuritySection/>
+      <MiniappsSection/>
       <Footer />
     </div>
   )

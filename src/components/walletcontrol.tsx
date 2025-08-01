@@ -14,13 +14,13 @@ const features: Feature[] = [
         title: 'Biometric-secured transfers',
         description: 'Every payment is gated by your fingerprint or face ID.',
         icon: Shield,
-        bgColor: 'bg-yellow-300',
+        bgColor: 'bg-orange-300',
     },
     {
         title: 'Immutable audit trail',
         description: 'All activity is logged on-chain for total transparency.',
         icon: Chart,
-        bgColor: 'bg-orange-300',
+        bgColor: 'bg-yellow-300',
     },
     {
         title: 'Google recovery',
@@ -51,7 +51,6 @@ export const SecuritySection: React.FC = () => (
                     <div
                         className={`${f.bgColor} rounded-lg mb-1.5 text-white inline-flex`}
                     >
-                        {/* {f.icon} */}
                         <img className='w-4 h-4' alt='security_option' src={f.icon} />
                     </div>
                     <h3 className="text-xl font-semibold mb-0.5">{f.title}</h3>
