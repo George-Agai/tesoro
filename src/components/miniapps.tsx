@@ -1,3 +1,4 @@
+import { useInView } from '../hooks/useInView'
 import bolt from '../assets/icons/bolt.webp'
 import puzzle from '../assets/icons/puzzle.webp'
 import prize from '../assets/icons/prize.webp'
@@ -37,14 +38,18 @@ const miniAppFeatures: MiniAppFeature[] = [
     },
 ]
 
-export const MiniappsSection: React.FC = () => (
-    <section className="px-1 py-6 bg-pink-100">
+export const MiniappsSection: React.FC = () => {
+
+    const [ref, inView] = useInView<HTMLDivElement>({ threshold: 0.1 })
+
+    return(
+    <section className="px-1 py-6 bg-pink-100" ref={ref}>
         <div className="max-w-4xl mx-auto text-center mb-3">
             <p className="border border-orange-300 inline-block text-sm px-1 rounded-full bg-orange-200">Mini Apps</p>
-            <h2 className="text-3xl md:text-4xl font-bold my-1">
+            <h2 className={`${inView ? 'slide-in' : ''} text-3xl md:text-4xl font-bold my-1`}>
                 Mini-Apps Hub
             </h2>
-            <p className="text-gray-600 mb-1">
+            <p className={`${inView ? 'slide-in' : ''} text-gray-600 mb-1`}>
                 Everything you need to earn, spend & save—powered by our ecosystem. Your keys, your rules, your transactions
             </p>
 
@@ -70,4 +75,4 @@ export const MiniappsSection: React.FC = () => (
             ))}
         </div>
     </section>
-)
+)}
