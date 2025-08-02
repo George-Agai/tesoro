@@ -1,4 +1,4 @@
-import { Header } from '../components/header';
+// import { Header } from '../components/header';
 import { Hero } from '../components/hero';
 import { Features } from '../components/features';
 import { Footer } from '../components/footer';
@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Features />
       <Freedom/>

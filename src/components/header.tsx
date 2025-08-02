@@ -1,14 +1,13 @@
 import { useState } from 'react';
+import pepper from '../assets/icons/pepper.png'
 
 export const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="relative my-container flex items-center justify-between p-1">
-      {/* Logo */}
-      <div className="text-xl font-bold">Tesoro</div>
+      <div className="flex items-center text-xl font-bold"><img src={pepper} alt="pepper_logo" className='w-2 h-2'/>Pepper</div>
 
-      {/* Hamburger / Close */}
       <button
         className="md:hidden text-2xl z-20"
         onClick={() => setOpen(!open)}
@@ -17,11 +16,10 @@ export const Header: React.FC = () => {
         {open ? '✕' : '☰'}
       </button>
 
-      {/* Overlay nav on mobile, static on md+ */}
       <nav
         className={`
           absolute top-0 right-0 rounded-lg flex flex-col items-left
-          bg-white p-1.5 pr-4
+          bg-white p-1.5 pr-3 shadow md:shadow-none
           transition-transform duration-200
           ${open ? 'translate-x-0' : 'translate-x-full'}
           md:static md:translate-x-0 md:flex-row md:bg-transparent md:backdrop-blur-0 md:p-0 md:space-y-0 md:flex md:items-center
