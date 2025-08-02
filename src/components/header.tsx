@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
       <nav
         className={`
           absolute top-0 right-0 rounded-lg flex flex-col items-left
-          bg-white p-2 pr-4 shadow
+          bg-white p-1.5 pr-4
           transition-transform duration-200
           ${open ? 'translate-x-0' : 'translate-x-full'}
           md:static md:translate-x-0 md:flex-row md:bg-transparent md:backdrop-blur-0 md:p-0 md:space-y-0 md:flex md:items-center
