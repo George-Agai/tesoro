@@ -21,7 +21,7 @@ export const Features: React.FC = () => (
     <section className="full-container py-5 bg-purple-100 px-1 sm:px-1.5 md:py-7">
         <div className="flex flex-col items-center">
             <p className="border border-orange-300 inline-block text-sm px-1 rounded-full bg-orange-200">Features</p>
-            <h1 className="text-center text-3xl md:text-4xl font-semibold my-1">Why choose us</h1>
+            <h1 className="slide-in text-center text-3xl md:text-4xl font-semibold my-1">Why choose us</h1>
             <p className="text-center max-w-2xl text-lg text-gray-600">
                 Discover a faster, cheaper and smarter way to send and spend money across Africa and beyond.
             </p>
