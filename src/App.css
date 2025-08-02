@@ -27,3 +27,19 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+/* Slide in animation */
+@keyframes slide-in-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slide-in-from-right 0.7s ease-out forwards;
+}

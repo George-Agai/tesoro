@@ -1,4 +1,5 @@
 import ladiesBg from '../assets/backgroundImages/ladies.webp';
+
 export const Freedom: React.FC = () => {
     return (
         <section className="relative full-container flex flex-col items-center justify-between p-1 py-4 bg-center bg-no-repeat bg-cover overflow-hidden" style={{ backgroundImage: `url(${ladiesBg})` }}>
@@ -11,6 +12,5 @@ export const Freedom: React.FC = () => {
                 Download App
             </button>
         </section>
-
     );
 };
