@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import pepper from '../assets/icons/pepper.png'
+import logo from '../assets/icons/logo.png'
 
 export const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="relative my-container flex items-center justify-between p-1">
-      <div className="flex items-center text-xl font-bold"><img src={pepper} alt="pepper_logo" className='w-2 h-2'/>Pepper</div>
+      <div className="flex items-center text-xl font-bold"><img src={logo} alt="logo" className='w-2.5 h-2.5'/>CoolCado</div>
 
       <button
         className="md:hidden text-2xl z-20"
